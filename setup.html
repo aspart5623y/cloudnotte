@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Cloudnotte - Sign up</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo/cloudnotte icon.png" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+
+    <!-- internal CSS styling  -->
+    <style>
+
+        /* S K E L E T O N */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none !important;
+            box-shadow: none !important;
+            font-size: 14px;
+            outline: none !important;
+        }
+        section{
+            padding: 100px 0;
+        }
+        body{
+            background: white;
+            scroll-behavior: smooth;
+        }
+        .rounded{
+            border-radius: 8px !important;
+        }
+        .bg-dark{
+            background-color: #273c75 !important;
+        }
+        .btn-primary-dark{
+            background-color: #273c75 !important;
+            color: white !important;
+            transition: .2s all ease;
+        }
+        .btn-primary-dark:hover{
+            background-color: #192a56 !important;
+        }
+        .border-primary-dark{
+            border: 1px solid #273c75 !important;
+        }
+        .text-primary-dark{
+            color: #273c75 !important;
+        }
+        .button input{
+            height: 45px;
+        }
+
+
+
+        /* input styles */
+        .input-group{
+            position: relative;
+        }
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: rgb(143, 141, 141);
+            font-weight: 600;
+            font-size: 15px;
+            transition: .2s ease all;
+        }
+        .custom-select, .form-control{
+            height: 45px !important;
+            border-radius: 5px !important;
+        }
+        .input-group input.form-control:focus, .custom-select:focus{
+            border: 1px solid #2d4688ab !important;
+            z-index: 0;
+        }
+        .input-group input.form-control:focus ~ label{
+            top: -9px;
+            font-size: 13px;
+            background-color: white;
+            padding: 0px 5px;
+            color: #273c75 !important;
+            z-index: 1;
+        }
+        .input-group input.form-control:valid ~ label{
+            top: -9px;
+            font-size: 13px;
+            background-color: white;
+            padding: 0px 5px;
+            color: rgb(143, 141, 141);
+            z-index: 1;
+        }
+        
+
+        
+
+        @media screen and (max-width: 568px) {
+            section{
+                padding: 50px 0;
+            }
+        }
+
+    </style>
+
+    <!-- jquery link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- popper js link -->
+    <script src="./vendor/popper.js/umd/popper-utils.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+   
+</head>
+<body>
+
+   <section>
+        <div class="container">
+            <!-- column -->
+            <div class="col-lg-10 px-0 mx-auto">
+                <!-- card -->
+                <div class="card rounded">
+                    <!-- card-body -->
+                    <div class="card-body px-3 px-md-5 py-5">
+                        
+                        <!-- image container -->
+                        <div class="logo-container text-center">
+                            <!-- image -->
+                            <img src="./assets/logo/cloudnotte logo.PNG" width="170" alt="logo">
+                        </div>
+
+                        <!-- card text -->
+
+
+                        <h5 class="font-weight-bold text-primary-dark text-center my-5">School information Setup</h5>
+
+                        <form action="#" novalidate>
+                            <!-- Name of school -->
+                            <div class="input-group mb-4">
+                                <!-- input box -->
+                                <input type="text" class="form-control" required>
+                                <!-- label -->
+                                <label>Name of school</label>
+                            </div>
+
+
+
+                            <!-- school contact details -->
+                            <div class="row">
+                                <!-- phone number column -->
+                                <div class="col-md-6">
+                                    <!-- Phone number input -->
+                                    <div class="row">
+                                        <!-- country select input -->
+                                        <div class="col-4 col-sm-3 pr-0">
+                                            <!-- select input -->
+                                            <select class="custom-select" style="background-color:  #273c75; color: white;">
+                                                <option value="">NG</option>
+                                                <option value="">US</option>
+                                                <option value="">UK</option>
+                                            </select>
+                                        </div>
+                                        <!-- main input -->
+                                        <div class="col-8 col-sm-9 pl-0">
+                                            <div class="input-group mb-4">
+                                                <!-- input box -->
+                                                <input type="text" class="form-control" required>
+                                                <!-- label -->
+                                                <label>School phone number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- School Email Address column -->
+                                <div class="col-md-6">
+                                    <!-- School Email Address input -->
+                                    <div class="input-group mb-4">
+                                        <!-- input box -->
+                                        <input type="text" class="form-control" required>
+                                        <!-- label -->
+                                        <label>School Email Address</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                            <!-- school contact details -->
+                            <div class="row">
+                                <!-- country column -->
+                                <div class="col-md-4 mb-4">
+                                    <!-- select input -->
+                                    <select class="custom-select">
+                                        <option value="">Country</option>
+                                        <option value="">NG</option>
+                                        <option value="">US</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- State column -->
+                                <div class="col-md-4 mb-4">
+                                    <!-- select input -->
+                                    <select class="custom-select">
+                                        <option value="">State</option>
+                                        <option value="">NG</option>
+                                        <option value="">US</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </div>
+
+
+                                <!-- School Email Address column -->
+                                <div class="col-md-4">
+                                    <!-- School Email Address input -->
+                                    <div class="input-group mb-4">
+                                        <!-- input box -->
+                                        <input type="text" class="form-control" required>
+                                        <!-- label -->
+                                        <label>School Email Address</label>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            
+                            
+
+
+
+                            <!-- School address details -->
+                            <div class="row">
+                                <!-- School address column -->
+                                <div class="col-md-6">
+                                    <!-- School address input -->
+                                    <div class="input-group mb-md-0 mb-4">
+                                        <!-- input box -->
+                                        <input type="type" class="form-control" required>
+                                        <!-- label -->
+                                        <label>School Address</label>
+                                    </div>
+                                </div>
+
+                                <!-- School prefix column -->
+                                <div class="col-md-6">
+                                    <!-- School prefix input -->
+                                    <div class="input-group">
+                                        <!-- input box -->
+                                        <input type="text" class="form-control border-right-0" required>
+                                        <!-- label -->
+                                        <label>School prefix</label>
+
+                                        <!-- append -->
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-white border-left-0">
+                                                <h5 class="text-primary-dark">
+                                                    .cloudnotte.com
+                                                </h5>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-muted">
+                                        Not more that 10 characters and it should be simple. Example xyz.cloudnotte.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+                            <!-- submit button -->
+                            <div class="button text-center mt-5">
+                                <input type="submit" class="btn btn-primary px-5 font-weight-bold" value="Continue">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

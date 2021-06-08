@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Cloudnotte - Sign up</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo/cloudnotte icon.png" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./vendor/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+
+    <!-- internal CSS styling  -->
+    <style>
+
+        /* S K E L E T O N */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none !important;
+            box-shadow: none !important;
+            font-size: 14px;
+            outline: none !important;
+        }
+        section{
+            padding: 100px 0;
+        }
+        body{
+            background: white;
+            scroll-behavior: smooth;
+        }
+        .rounded{
+            border-radius: 8px !important;
+        }
+        .bg-dark{
+            background-color: #273c75 !important;
+        }
+        .btn-primary-dark{
+            background-color: #273c75 !important;
+            color: white !important;
+            transition: .2s all ease;
+        }
+        .btn-primary-dark:hover{
+            background-color: #192a56 !important;
+        }
+        .border-primary-dark{
+            border: 1px solid #273c75 !important;
+        }
+        .text-primary-dark{
+            color: #273c75 !important;
+        }
+        .button input{
+            height: 45px;
+        }
+
+
+
+        /* input styles */
+        .input-group{
+            position: relative;
+        }
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: rgb(143, 141, 141);
+            font-weight: 600;
+            font-size: 15px;
+            transition: .2s ease all;
+        }
+        .custom-select, .form-control{
+            height: 45px !important;
+            border-radius: 5px !important;
+        }
+        .input-group input.form-control:focus{
+            border: 1px solid #2d4688ab !important;
+            z-index: 0;
+        }
+        .input-group input.form-control:focus ~ label{
+            top: -9px;
+            font-size: 13px;
+            background-color: white;
+            padding: 0px 5px;
+            color: #273c75 !important;
+            z-index: 1;
+        }
+        .input-group input.form-control:valid ~ label{
+            top: -9px;
+            font-size: 13px;
+            background-color: white;
+            padding: 0px 5px;
+            color: rgb(143, 141, 141);
+            z-index: 1;
+        }
+        
+
+        
+
+        @media screen and (max-width: 568px) {
+            section{
+                padding: 50px 0;
+            }
+        }
+
+    </style>
+
+    <!-- jquery link -->
+    <script src="./vendor/jQuery/jquery-3.5.1.min.js"></script>
+    <!-- popper js link -->
+    <script src="./vendor/popper.js/umd/popper-utils.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+
+   
+</head>
+<body>
+
+   <section>
+        <div class="container">
+            <!-- column -->
+            <div class="col-lg-10 px-0 mx-auto">
+                <!-- card -->
+                <div class="card rounded">
+                    <!-- card-body -->
+                    <div class="card-body px-3 px-md-5 py-5">
+                        <div class="row">
+                            <!-- left hand side of the form -->
+                            <div class="col-lg-8">
+                                 <!-- image container -->
+                                <div class="logo-container">
+                                    <!-- image -->
+                                    <img src="./assets/logo/cloudnotte logo.PNG" width="170" alt="logo">
+                                </div>
+
+                                <!-- card text -->
+                                <p class="text-muted px-1 mb-4">A mordern tool for online and offline schools.</p>
+
+
+                                <h5 class="font-weight-bold text-primary-dark" style="margin-bottom: 25px;">Create your Cloudnotte account</h5>
+
+                                <form action="#" novalidate>
+                                    <!-- name details -->
+                                    <div class="row">
+                                        <!-- first name column -->
+                                        <div class="col-sm-6">
+                                            <!-- First Name input -->
+                                            <div class="input-group mb-4">
+                                                <!-- input box -->
+                                                <input type="text" class="form-control" required>
+                                                <!-- label -->
+                                                <label>First Name</label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Last name column -->
+                                        <div class="col-sm-6">
+                                            <!-- Last Name input -->
+                                            <div class="input-group mb-4">
+                                                <!-- input box -->
+                                                <input type="text" class="form-control" required>
+                                                <!-- label -->
+                                                <label>Last Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  
+                                    <!-- Phone number input -->
+                                   <div class="row">
+                                        <!-- country select input -->
+                                        <div class="col-4 col-sm-3 pr-0">
+                                            <!-- select input -->
+                                            <select class="custom-select" style="background-color:  #273c75; color: white;">
+                                                <option value="">NG</option>
+                                                <option value="">US</option>
+                                                <option value="">UK</option>
+                                            </select>
+                                        </div>
+                                        <!-- main input -->
+                                        <div class="col-8 col-sm-9 pl-0">
+                                            <div class="input-group mb-4">
+                                                <!-- input box -->
+                                                <input type="text" class="form-control" required>
+                                                <!-- label -->
+                                                <label>Phone number</label>
+                                            </div>
+                                        </div>
+                                   </div>
+
+                                   <!-- email address -->
+                                   <div class="input-group mb-4">
+                                        <!-- input box -->
+                                        <input type="text" class="form-control" required>
+                                        <!-- label -->
+                                        <label>Email address</label>
+                                    </div>
+
+                                    <!-- password details -->
+                                    <div class="row">
+                                        <!-- password column -->
+                                        <div class="col-sm-6">
+                                            <!-- password input -->
+                                            <div class="input-group mb-sm-0 mb-4">
+                                                <!-- input box -->
+                                                <input type="password" class="form-control" required>
+                                                <!-- label -->
+                                                <label>Password</label>
+                                            </div>
+                                        </div>
+
+                                        <!-- confirm password column -->
+                                        <div class="col-sm-6">
+                                            <!-- confirm password input -->
+                                            <div class="input-group">
+                                                <!-- input box -->
+                                                <input type="password" class="form-control" required>
+                                                <!-- label -->
+                                                <label>Confirm Password</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-muted">
+                                        Use 8 or more characters with a mix of letters, numbers & symbols.
+                                    </p>
+
+                                    <!-- buttons -->
+                                    <div class="row my-5">
+                                        <div class="col-sm-6 order-sm-2">
+                                            <!-- submit button -->
+                                            <div class="button">
+                                                <input type="submit" class="btn btn-primary w-100 font-weight-bold" value="Sign up">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 order-sm-1 mt-3 mt-sm-0 d-flex align-items-center">
+                                            <!-- sign in link -->
+                                            <a href="#
+                                            " class="text-primary-dark font-weight-bold d-block">Sign in instead...</a>
+                                        </div> 
+                                    </div>
+
+                                    <p class="text-muted text-center">
+                                        By creating an account, you agree to our terms and conditions.
+                                    </p>
+
+                                </form>
+                            </div>
+
+                            <!-- right hand side -->
+                            <!-- it'll hide on small devices -->
+                            <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center">
+                                <img src="./assets/logo/cloudnotte icon.png" alt="" class="d-block img-fluid">
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
